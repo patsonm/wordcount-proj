@@ -1,0 +1,15 @@
+<h1>Count Summary Below</h1>
+
+<a href="{% url 'home'%}">Start Again</a>
+
+<h2>There are {{count}} words</h2>
+
+<h2>Input Text:</h2>
+{{fulltext}}
+
+<h2>The count is:</h2>
+{%for word, countword in worddic %}
+{{word}} : {{ countword}}
+<br>
+{%endfor %}
+
